@@ -1,7 +1,7 @@
 function HomePage() {
   return (
     <div>
-      <h1>11:40:36 Implement AI</h1>
+      <h1>12:34:31 Read Property From JSON</h1>
       <p>No Error</p>
       <h2>Key Timeline:</h2>
     </div>
