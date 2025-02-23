@@ -40,4 +40,22 @@ export async function GetStatsCardsValues(period: Period) {
       },
     },
   });
+
+  const stats = {
+    workflowExecutions: execution.length,
+    creditsConsumed: 0,
+    phaseExecutions: 0,
+  };
+
+  stats.creditsConsumed = execution.reduce(
+    (sum, execution) => sum + execution.creditsConsumed,
+    0
+  );
+
+  stats.phaseExecutions = execution.reduce(
+    (sum, execution) => sum + execution.phases.length,
+    0
+  );
+
+  return stats;
 }

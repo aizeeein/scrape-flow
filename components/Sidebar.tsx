@@ -53,7 +53,7 @@ function DesktopSidebar() {
         <UserAvailableCreditsBadge />
       </div>
       <div className="flex flex-col p-2">
-        <h1>13:25:00 create Statistics</h1>
+        <h1>14:01:00 Billing Page With Stripe</h1>
         {routes.map((route) => (
           <Link
             key={route.href}
